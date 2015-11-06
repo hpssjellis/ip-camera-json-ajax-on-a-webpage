@@ -22,14 +22,16 @@ function loadDoc() {
       document.getElementById("demo2").innerHTML = JSON.stringify(myResult.gravity);
       document.getElementById("demo3").value = xhttp.responseText;
 
-//JSON.stringify(obj)
+  //JSON.stringify(obj) to change a JSON [Object] back to a string to view it
 
   //sense=proximity,rot_vector,gravity,battery_temp,light,battery_level,gyro,accel,lin_accel,pressure,battery_voltage,mag
   //from=<timestamp>   
     }
   }      
 
-var myTimehalfsecondAgo = Date.now()-500
+//var myTimehalfsecondAgo = Date.now()-500
+// xhttp.open("GET", "http://192.168.1.70:8080/sensors.json?from="+myTimehalfsecondAgo+"&sense=lin_accel", true);
+
                                                         
   xhttp.open("GET", "http://192.1.1.1:8080/sensors.json", true);
   xhttp.send();
