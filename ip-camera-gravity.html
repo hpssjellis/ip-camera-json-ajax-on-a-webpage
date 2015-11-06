@@ -1,6 +1,11 @@
 <html>
 <body>
 
+<h1 align=center>IP Camera JSON data</h1>
+<a href="https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en">https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en</a><br><br>
+
+
+Enter the given Wifi IP from IP Camera:  <b>http://<input type=text id="myIP" size=6 placeholder="10.1.1.1">:8080</b><br>
 <button type="button" onclick="{loadDoc()}">IP Camera JSON Loader</button><br><br>
 
 One X Gravity value= <input id="myx1" type=text placeholder="one value here" size=50><br><br>
@@ -33,7 +38,7 @@ function loadDoc() {
 // xhttp.open("GET", "http://192.168.1.70:8080/sensors.json?from="+myTimehalfsecondAgo+"&sense=lin_accel", true);
 
                                                         
-  xhttp.open("GET", "http://192.1.1.1:8080/sensors.json", true);
+  xhttp.open("GET", "http://"+document.all.myIP.value+":8080/sensors.json", true);
   xhttp.send();
 }
 </script>
