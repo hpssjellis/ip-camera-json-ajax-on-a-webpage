@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<button type="button" onclick="{loadDoc()}">IP Camera JSON Loader</button><br><br>
+
+One X Gravity value= <input id="myx1" type=text placeholder="one value here" size=50><br><br>
+
+Gravity Refined Here: <div id="demo">Refined here</div><br><br>
+
+Full Gravity JSON here:<br><textarea id="demo2" rows=20 cols=70>Some output here</textarea><br><br>
+The Full Set of JSON from the IP Camera here:<br><textarea id="demo3" rows=20 cols=70>Full Output here</textarea>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      myResult = JSON.parse(xhttp.responseText);    // only grab the result
+
+      document.all.myx1.value = myResult.gravity.data[0][1][0]
+      document.getElementById("demo").innerHTML = '<b>'+myResult.gravity.data[0]+'</b>';
+      document.getElementById("demo2").innerHTML = JSON.stringify(myResult.gravity);
+      document.getElementById("demo3").value = xhttp.responseText;
+
+//JSON.stringify(obj)
+
+  //sense=proximity,rot_vector,gravity,battery_temp,light,battery_level,gyro,accel,lin_accel,pressure,battery_voltage,mag
+  //from=<timestamp>   
+    }
+  }      
+
+var myTimehalfsecondAgo = Date.now()-500
+                                                        
+  xhttp.open("GET", "http://192.1.1.1:8080/sensors.json", true);
+  xhttp.send();
+}
+</script>
+
+<br>
+
+
+
+</body>
+</html>
