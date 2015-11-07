@@ -3,7 +3,7 @@ Getting the massive amount of data from the wifi IP Camera for Android onto a we
 
 I said that the cell phone was a great device for getting sensor infomation in my video at 
 
-https://www.youtube.com/edit?o=U&video_id=1ZYcCXPAMPo
+https://www.youtube.com/watch?v=1ZYcCXPAMPo
 
 and herre is the way to do it 11 months later.
 
