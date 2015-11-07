@@ -36,7 +36,7 @@ Basic operation is to use the main webpage using the URL gaven to you on the mai
 
 example 
 
-http://255.1.1.1:8080       Make sure you are on a wifi network. Not really sure what happens when you are using your cells data.
+http://192.192.2.19:8080       Make sure you are on a wifi network. Not really sure what happens when you are using your cells data.
 
 ![](images/main page.png)
 
