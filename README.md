@@ -21,6 +21,15 @@ This page helps makes the ton of data available to javascript.
 ![](images/Screenshot_2015-11-06-16-08-04.png)
 
 
+Basic operation is to use the main webpage and then click on open sensor graph
+
+
+![](images/main page.png)
+![](images/graph.png)
+
+
+
+
 
 And here is what the web page looks like when it has extracted data from the IP camera.
 
