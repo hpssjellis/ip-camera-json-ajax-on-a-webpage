@@ -20,9 +20,16 @@ This page helps makes the ton of data available to javascript.
 ![](images/Screenshot_2015-11-06-16-07-42.png)
 ![](images/Screenshot_2015-11-06-16-08-04.png)
 
+And then the App main page on your Android cell phone looks like this
 
-Basic operation is to use the main webpage
-using http://255.1.1.1:8080    Make sure you are on a wifi network. Not really sure what happens when you are suing your cells data.
+![](images/cups.png)
+
+
+Basic operation is to use the main webpage using the URL gaven to you on the main IP Camera page
+
+example 
+
+http://255.1.1.1:8080       Make sure you are on a wifi network. Not really sure what happens when you are using your cells data.
 
 ![](images/main page.png)
 
