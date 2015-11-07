@@ -1,6 +1,13 @@
 # ip-camera-json-ajax-on-a-webpage
 Getting the massive amount of data from the wifi IP Camera for Android onto a web page using AJAX
 
+I said that the cell phone was a great device for getting sensor infomation in my video at 
+
+https://www.youtube.com/edit?o=U&video_id=1ZYcCXPAMPo
+
+and herre is the way to do it 11 months later.
+
+
 
 Nov5, 2015
 Basically this javascript AJAX page proves you can get individual data from the reams of information colleted by IP camera from all your phones sensors.
